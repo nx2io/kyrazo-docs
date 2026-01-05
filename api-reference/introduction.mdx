@@ -26,7 +26,7 @@ The Integration API allows you to programmatically publish events and manage web
 
 ## Authentication
 
-All API endpoints are authenticated using the **x-api-key** header. You can generate API keys within the Hookify Dashboard under your Project Settings.
+All API endpoints are authenticated using the **x-api-key** header. You can manage your API keys within the [Kyrazo Dashboard](https://kyrazo.com/dashboard) under the **Secrets Page**.
 
 ```bash
 x-api-key: <your_api_key>
@@ -34,21 +34,20 @@ x-api-key: <your_api_key>
 
 ### Idempotency
 
-To prevent duplicate processing of the same request (e.g., due to network retries), you can provide an optional `Idempotency-Key` header. Hookify ensures that requests with the same key are processed only once.
+To prevent duplicate processing of the same request (e.g., due to network retries), you can provide an optional `X-Idempotency-Key` header. Kyrazo ensures that requests with the same key are processed only once.
 
 ```bash
-Idempotency-Key: <unique_key>
+X-Idempotency-Key: <unique_key>
 ```
 
 ## Base URL
 
-The default base URL for the Integration API is:
+The production base URL for the Kyrazo Integration API is:
 
 ```http
-http://localhost:3004
+https://api.kyrazo.com
 ```
 
 <Note>
-  In production, please use the official Kyrazo API URL provided in your
-  dashboard.
+  Ensure you are using the correct Project ID from your dashboard when constructing the publish URL: `https://api.kyrazo.com/v1/events/{projectId}/publish`
 </Note>

@@ -3,9 +3,9 @@
   "theme": "aspen",
   "name": "Kyrazo",
   "colors": {
-    "primary": "#7ccf00",
+    "primary": "#09090b",
     "dark": "#09090b",
-    "light": "#ffffff"
+    "light": "#fafafa"
   },
   "favicon": "/favicon.ico",
   "navigation": {
@@ -18,31 +18,26 @@
             "pages": [
               "index",
               "quickstart",
-              "development"
+              "essentials/concepts",
+              "essentials/architecture",
+              "essentials/use-cases",
+              "essentials/security"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Dispatch",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "essentials/dispatch-overview",
+              "essentials/target-management",
+              "essentials/webhooks-verification"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Ingest",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "essentials/ingest-overview",
+              "essentials/sources",
+              "essentials/endpoints"
             ]
           }
         ]
@@ -53,61 +48,54 @@
           {
             "group": "Overview",
             "pages": [
-              "api-reference/integration-introduction"
+              "api-reference/introduction",
+              "api-reference/ratelimiter"
             ]
           },
           {
-            "group": "Events",
+            "group": "Dispatch Events",
             "pages": [
-              "api-reference/integration/publish-event",
-              "api-reference/integration/publish-events-batch"
-            ]
-          },
-          {
-            "group": "Targets",
-            "pages": [
-              "api-reference/integration/list-targets",
-              "api-reference/integration/create-target",
-              "api-reference/integration/get-target",
-              "api-reference/integration/update-target",
-              "api-reference/integration/update-target-status",
-              "api-reference/integration/delete-target",
-              "api-reference/integration/get-target-secret"
+              {
+                "group": "Events",
+                "pages": [
+                  "api-reference/integration/publish-event",
+                  "api-reference/integration/publish-events-batch"
+                ]
+              },
+              {
+                "group": "Targets",
+                "pages": [
+                  "api-reference/integration/list-targets",
+                  "api-reference/integration/create-target",
+                  "api-reference/integration/get-target",
+                  "api-reference/integration/update-target",
+                  "api-reference/integration/update-target-status",
+                  "api-reference/integration/delete-target",
+                  "api-reference/integration/get-target-secret"
+                ]
+              }
             ]
           }
         ]
       }
     ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    "global": {}
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/light.png",
+    "dark": "/logo/dark.png"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@kyrazo.com"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://kyrazo.com/dashboard"
     }
   },
   "contextual": {
@@ -124,9 +112,9 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/kyrazohq",
+      "github": "https://github.com/kyrazo",
+      "linkedin": "https://linkedin.com/company/kyrazo"
     }
   }
 }
